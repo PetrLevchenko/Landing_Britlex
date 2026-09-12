@@ -1,0 +1,105 @@
+/* .poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+} */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  /* outline: 1px solid red; */
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+p,
+ul,
+li,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.lending {
+  max-width: 1660px;
+  width: 100%;
+  margin: 0 auto;
+}
+.lending__inner {
+  max-width: 1338px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 54px;
+  align-items: center;
+  margin-bottom: 51px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav__logo {
+}
+.nav__items ul {
+  display: flex;
+  gap: 37px;
+}
+.nav__items ul a {
+  font: 500 20px "Poppins", sans-serif;
+color: #263238;
+}
+.nav__btn {
+  width: 224px;
+  height: 70px;
+  text-align: center;
+  transition: 0.5s all;
+}
+.nav__btn button {
+  font: 400 24px "Poppins", sans-serif;
+color: #000;
+padding: 17px 57px;
+border: 2px solid #263238;
+border-radius: 5px;
+}
+.nav__btn:hover, .nav__items li:hover {
+  opacity: 0.3;
+  transition: 0.5s all;
+}
+.nav__items li {
+  transition: 0.5s all;
+}
+@media screen and (max-width: 1660px) {
+  
+}
