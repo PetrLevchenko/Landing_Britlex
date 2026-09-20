@@ -4,40 +4,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap&subset=latin"
     rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <title>Britlex</title>
+  <script defer src="js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
   <div class="lending">
     <div class="lending__inner">
       <!-- Nav -->
-      <div class="nav">
-        <div class="nav__logo">
-          <img src="img/Britlex.png" alt="Britlex">
+      <header class="header">
+        <nav class="nav">
+          <div class="nav__logo">
+            <img src="img/Britlex.png" alt="Britlex">
+          </div>
+          <div class="nav__items" id="nav__items">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Skills</a></li>
+            </ul>
+          </div>
+
+
+          <div class="nav__btn">
+            <button>Let's Talk</button>
+          </div>
+
+          <button class="burger-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </button>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <div class="nav__logo__offcanvas" id="offcanvasExampleLabel">
+                <img src="img/Britlex.png" alt="Britlex">
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <hr>
+            <div class="offcanvas-body">
+              <div class="nav__items__offcanvas" id="offcanvasExampleLabel">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Skills</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Contacts</a></li>
+                </ul>
+                <div class="nav__btn__offcanvas">
+                  <button>Let's Talk</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Learn -->
+      <!-- <section class="learn">
+        <div class="learn__left">
+          <h1 class="learn__left__h1">Learn<br>Any Foreign<br>Language</h1>
+          <img src="img/light-bulb-svgrepo-com 1.svg" alt="light">
+          <p>With our teachers who write a program for
+            each student, you will be able to make your
+            first sketch after the first lesson.</p>
+            <button>Get started</button>
         </div>
 
-        <div class="nav__items">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contacts</a></li>
-          </ul>
+        <div class="learn__right">
+          <img src="img/Learning languages-bro 1.png" alt="languages-bro">
         </div>
-
-        <div class="nav__btn">
-          <button>Let's Talk</button>
-        </div>
-      </div>
-      
+      </section> -->
     </div>
   </div>
+
+
+
 </body>
 
 </html>
