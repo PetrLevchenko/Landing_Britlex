@@ -72,7 +72,7 @@ button {
   justify-content: space-between;
   padding-top: 49px;
   align-items: center;
-  margin-bottom: 51px;
+  margin-bottom: 56px;
 
 }
 
@@ -185,13 +185,17 @@ hr {
   margin-top: 66px;
 }
 
+.learn {
+  display: flex;
+  justify-content: space-between;
+}
+
 .learn__left {
   padding-top: 51px;
   position: relative;
 }
 
 .learn__left img {
-  /* display: none; */
   position: absolute;
   top: 142px;
   left: 424px;
@@ -228,6 +232,15 @@ hr {
 
 .learn__right {
   margin-right: -8px;
+  max-width: 661px;
+  max-height: 661px;
+}
+
+.learn__right img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
 }
 
 @media screen and (max-width: 1660px) {}
@@ -278,6 +291,43 @@ hr {
   .nav__items {
     margin-left: 10%;
   }
+
+  .learn__left {
+    max-width: 423px;
+    padding-top: 23px;
+    margin-left: 6px;
+  }
+
+  .learn__left__h1 {
+    font-size: 48px;
+    margin-bottom: 24px;
+    line-height: 1.3333;
+  }
+
+  .learn__left p {
+    font-size: 20px;
+    margin-bottom: 33px;
+  }
+
+  .learn__left button {
+    font-size: 24px;
+    width: 292px;
+    height: 80px;
+  }
+
+  .learn__right {
+    margin-right: -17px;
+    max-width: 460px;
+    max-height: 460px;
+    margin-top: 6px;
+  }
+
+  .learn__left img {
+    width: 80px;
+    height: 80px;
+    top: 112px;
+    left: 303px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -302,6 +352,44 @@ hr {
 
   .burger-btn {
     display: flex;
+  }
+
+  .learn__right {
+    margin-right: -28px;
+    max-width: 352px;
+    max-height: 352px;
+    margin-top: -26px;
+  }
+
+  .learn__left__h1 {
+    font-size: 36px;
+    margin-bottom: 24px;
+    line-height: 1.25;
+  }
+
+  .learn__left p {
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+
+  .learn__left button {
+    font-size: 18px;
+    width: 236px;
+    height: 65px;
+    border-radius: 5px;
+  }
+
+  .learn__left {
+    max-width: 346px;
+    padding-top: 2px;
+    margin-left: 2px;
+  }
+
+  .learn__left img {
+    width: 71px;
+    height: 71px;
+    top: 68px;
+    left: 216px;
   }
 }
 
@@ -348,6 +436,60 @@ hr {
   .burger-line:last-child {
     width: 29px;
   }
+
+  .learn {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .learn__right {
+    margin-right: -23px;
+    max-width: 424px;
+    max-height: 424px;
+    margin-top: -55px;
+  }
+
+  .learn__left img {
+    display: none;
+  }
+
+  .learn__left__h1 {
+    font-size: 34px;
+    line-height: 1.3235;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .learn__left__h1 br {
+    display: none;
+  }
+
+  .learn__left {
+    max-width: 575px;
+    padding-top: 17px;
+    margin-left: 22px;
+  }
+
+  .learn__left p {
+    margin-bottom: 41px;
+  }
+
+  .learn__left button {
+    max-width: 305px;
+    height: 75px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .learn__left__h1 {
+    font-size: 34px;
+    line-height: 1.3235;
+    white-space: normal;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -390,5 +532,41 @@ hr {
 
   .burger-btn {
     margin-top: -12px;
+  }
+
+  .learn__right {
+    max-width: 299px;
+    max-height: 299px;
+    margin: 0 auto;
+  }
+
+  .nav {
+    margin-bottom: 28px;
+  }
+
+  .learn__left {
+    margin-left: 0;
+  }
+
+  .learn__left__h1 {
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+    white-space: normal;
+    display: block;
+    margin: 0 auto 19px;
+    max-width: 220px;
+  }
+
+  .learn__left p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-align: center;
+    max-width: 297px;
+  }
+
+  .learn__left button {
+    max-width: 289px;
+    height: 60px;
   }
 }
