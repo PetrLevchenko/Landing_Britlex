@@ -244,12 +244,17 @@ hr {
   width: 100%;
 }
 
+.skills {
+  margin-bottom: 172px;
+}
+
 .skills button {
   transition: 0.5s;
 }
+
 .skills button:hover {
-      transition: 0.5s;
-    opacity: 0.3;
+  transition: 0.5s;
+  opacity: 0.3;
 }
 
 .skills__h2 {
@@ -276,8 +281,13 @@ hr {
   background: #f5f5f5;
   border-radius: 10px;
   overflow: hidden;
+  transition: 0.5s;
 }
 
+.skills__grid>div:hover {
+  transition: 0.5s;
+  transform: translateY(-5px);
+}
 
 .skills__grid__item__speaking {
   grid-area: a;
@@ -458,6 +468,74 @@ hr {
 .skills__grid__item__listening__h3 {
   padding-top: 41px;
   margin-bottom: 15px;
+}
+
+.about {
+  margin-bottom: 180px;
+}
+
+.about__h2 {
+  font-size: 48px;
+  font-weight: 600;
+  max-width: 220px;
+  margin-bottom: 34px;
+}
+
+.about__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__item_left {
+  max-width: 635px;
+}
+
+.about__p {
+  font: 400 20px "Poppins", sans-serif;
+  color: #8f95a5;
+  margin-bottom: 41px;
+}
+
+.about__digital__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__digital__flex>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.digital:first-child {
+  margin-right: 53px;
+}
+
+.digital:last-child {
+  margin-right: 34px;
+}
+
+.digital__num {
+  font: 600 48px "Poppins", sans-serif;
+  color: #2a3246;
+}
+
+.digital__label {
+  font: 400 20px "Poppins", sans-serif;
+  color: #8f95a5;
+}
+
+
+.about__item_right {
+  width: 500px;
+  aspect-ratio: 1 / 1;
+  transform: translate(-2%, -26.2%);
+}
+
+.about__item_right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1660px) {}
@@ -687,6 +765,40 @@ hr {
     overflow: hidden;
     transform: translate(11%, 19%);
   }
+
+  .skills {
+    margin-bottom: -76px;
+  }
+
+  .about__h2 {
+    font-size: 36px;
+    margin-bottom: 34px;
+  }
+
+  .about__p {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  .digital__num {
+    font-size: 30px;
+  }
+
+  .digital__label {
+    font-size: 16px;
+  }
+
+  .about__item_left {
+    max-width: 525px;
+  }
+
+  .digital:last-child {
+    margin-right: 125px;
+  }
+
+  .digital:first-child {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -857,6 +969,41 @@ hr {
 
   .skills__grid__item__speaking {
     max-height: 662px;
+  }
+
+  .about__h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .skills {
+    margin-bottom: -156px;
+  }
+
+  .about__p {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+
+  .digital__num {
+    font-size: 22px;
+  }
+
+  .digital__label {
+    font-size: 14px;
+  }
+
+  .about__item_left {
+    max-width: 320px;
+  }
+
+  .digital:last-child {
+    margin-right: 0;
+  }
+
+  .about__item_right {
+    max-width: 295px;
+    transform: translate(1%, -15.2%);
   }
 }
 
@@ -1066,6 +1213,46 @@ hr {
     display: flex;
     flex-direction: column;
   }
+
+  .skills {
+    margin-bottom: 105px;
+  }
+
+  .about__h2 {
+    margin: 0 auto 9%;
+    text-align: center;
+  }
+
+  .about__flex {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .about__item_right {
+    transform: none;
+  }
+
+  .about__item_right {
+    max-width: 352px;
+    margin-bottom: 25px;
+  }
+
+  .about__item_left {
+    max-width: 510px;
+    text-align: center;
+  }
+
+  .digital__num {
+    font-size: 24px;
+  }
+
+  .about__p {
+    margin-bottom: 40px;
+  }
+
+  .about__digital__flex {
+    margin: 0 19px 0 43px;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -1153,9 +1340,16 @@ hr {
   .skills__grid__item__listening__h3 {
     padding-left: 0;
   }
+
 }
 
-@media screen and (max-width: 360px) {}
+@media screen and (max-width: 360px) {
+  .about__digital__flex {
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 51px;
+  }
+}
 
 @media screen and (max-width: 320px) {
   .nav__logo__offcanvas {
@@ -1292,4 +1486,31 @@ hr {
   .listening__h3__p__btn p {
     margin-bottom: 38px;
   }
+
+  .about__item_right {
+    max-width: 283px;
+    margin-bottom: 25px;
+  }
+
+  .skills {
+    margin-bottom: 88px;
+  }
+
+  .about__h2 {
+    font-size: 24px;
+  }
+
+  .about__h2 {
+    margin: 0 auto 16%;
+  }
+
+  .about__p {
+    font-size: 13px;
+    margin-bottom: 17px;
+  }
+
+  .lending__inner {
+    padding: 0 8px;
+  }
+
 }
