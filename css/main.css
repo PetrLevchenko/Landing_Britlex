@@ -611,6 +611,79 @@ hr {
   margin-bottom: 20px;
 }
 
+.contact {
+  margin-bottom: 133px;
+}
+
+.contact__h2 {
+  font: 600 48px "Poppins", sans-serif;
+  color: #000;
+  text-align: center;
+  transform: translate(34px, 41px);
+}
+
+.contact__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__img {
+  max-width: 477px;
+  max-height: 429px;
+  transform: translate(-21px, -70px);
+}
+
+.contact__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.contact__p__form {
+  max-width: 776px;
+  padding-top: 82px;
+  padding-left: 7px;
+}
+
+.contact__p {
+  font: 400 20px "Poppins", sans-serif;
+  color: #8f95a5;
+  margin-bottom: 49px;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.subscribe input {
+  font: 400 16px "Poppins", sans-serif;
+  border: 1px solid #8f95a5;
+  border-radius: 10px;
+  width: 450px;
+  height: 80px;
+  padding-left: 34px;
+}
+
+.subscribe input::placeholder {
+  color: #8f95a5;
+}
+
+.subscribe button {
+  font: 500 20px "Poppins", sans-serif;
+  color: #fff;
+  border-radius: 10px;
+  width: 264px;
+  height: 80px;
+  background: #263238;
+  transition: 0.5s;
+}
+
+.subscribe button:hover {
+  transition: 0.5s;
+  opacity: 0.6;
+}
 
 @media screen and (max-width: 1660px) {}
 
@@ -621,6 +694,12 @@ hr {
 
   .pricing__grid>div {
     overflow: hidden;
+  }
+
+  .contact__img {
+    max-width: 312px;
+    max-height: 281px;
+    transform: none;
   }
 }
 
@@ -929,6 +1008,46 @@ hr {
     transform: translate(15px, -12px);
     margin-bottom: 2px;
   }
+
+  .contact__h2 {
+    font-size: 36px;
+  }
+
+  .contact__p {
+    font-size: 16px;
+    max-width: 467px;
+    margin-bottom: 36px;
+  }
+
+  .subscribe {
+    gap: 14px;
+  }
+
+  .subscribe input {
+    font-size: 14px;
+    width: 323px;
+    height: 60px;
+  }
+
+  .subscribe button {
+    font-size: 16px;
+    width: 193px;
+    height: 60px;
+  }
+
+  .pricing {
+    margin-bottom: 87px;
+  }
+
+  .contact__h2 {
+    transform: translate(61px, 60px);
+  }
+
+  .contact__p__form {
+    max-width: 526px;
+    padding-top: 76px;
+  }
+
 }
 
 @media screen and (max-width: 920px) {
@@ -1188,6 +1307,51 @@ hr {
 
   .item__self p {
     margin-bottom: 12px;
+  }
+
+  .contact__img {
+    max-width: 233px;
+    max-height: 210px;
+  }
+
+  .contact__h2 {
+    font-size: 30px;
+  }
+
+  .contact__p {
+    font-size: 14px;
+    max-width: 467px;
+    margin-bottom: 26px;
+  }
+
+  .subscribe {
+    gap: 6px;
+  }
+
+  .subscribe input {
+    font-size: 14px;
+    max-width: 283px;
+    height: 50px;
+  }
+
+  .subscribe button {
+    font-size: 13px;
+    max-width: 145px;
+    height: 50px;
+  }
+
+  .pricing {
+    margin-bottom: 46px;
+  }
+
+  .contact__h2 {
+    transform: translate(-1px, 38px);
+  }
+
+  .contact__p__form {
+    max-width: 428px;
+    padding-top: 45px;
+    padding-left: 0;
   }
 
 }
@@ -1487,6 +1651,59 @@ hr {
     transform: translate(-7px, 37px);
     margin-bottom: 49px;
   }
+
+  .contact__p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .subscribe button {
+    font-size: 16px;
+    max-width: 193px;
+    height: 60px;
+  }
+
+  .subscribe input {
+    font-size: 13px;
+    padding-left: 11px;
+    flex: 1;
+    border: none;
+  }
+
+  .subscribe {
+    gap: 0;
+    max-width: 511px;
+    border: 1px solid #8f95a5;
+    border-radius: 10px;
+    height: 60px;
+    align-items: center;
+  }
+
+  .contact__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__img {
+    max-width: 358px;
+    max-height: 322px;
+    transform: translate(9px, 0);
+  }
+
+  .contact__h2 {
+    transform: none;
+    margin-bottom: 100px;
+  }
+
+  .pricing {
+    margin-bottom: 175px;
+  }
+
+  .contact__p__form {
+    max-width: stretch;
+    padding-top: 36px;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -1583,6 +1800,40 @@ hr {
     flex-direction: column;
     gap: 51px;
   }
+
+  .contact__p__form {
+    max-width: 100%;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    gap: 14px;
+    border: none;
+    max-width: 291px;
+    border-radius: 0;
+    height: 100%;
+  }
+
+  .subscribe input {
+    border: 1px solid #8f95a5;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    font-size: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .subscribe button {
+    max-width: 290px;
+    height: 60px;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+
 }
 
 @media screen and (max-width: 320px) {
@@ -1795,4 +2046,28 @@ hr {
     margin-bottom: 54px;
   }
 
+  .contact__h2 {
+    font-size: 24px;
+    margin-bottom: 59px;
+  }
+
+  .contact__img {
+    max-width: 253px;
+    max-height: 228px;
+    transform: translate(9px, 0);
+  }
+
+  .pricing {
+    margin-bottom: 112px;
+  }
+
+  .contact__p {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+
+  .subscribe input {
+    font-size: 12px;
+    padding-left: 22px;
+  }
 }
